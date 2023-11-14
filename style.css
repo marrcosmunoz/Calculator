@@ -1,0 +1,188 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    background-color: lightgreen;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 310px;
+    height: 550px;
+    text-align: center;
+    position: relative;
+}
+
+.display input {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    grid-column: span 4;
+    padding: 20px;
+    margin-bottom: 40px;
+    width: 250px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 25px;
+    position: relative;
+    margin-top: 60px;
+    padding: 15px;
+    top: 27%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.Cientifica {
+    margin-top: 0px;
+    position: absolute;
+    display: grid;
+    grid-column: 2;
+    width: 80px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+.calculator .buttons .scientific {
+    display: none; /* Oculta los botones científicos por defecto */
+}
+#voiceButton {
+    display: grid;
+    grid-column: 1;
+    width: 80px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-left: 75%;
+}
+
+.operator {
+    width: 55px;
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#clear {
+    background-color: white;
+    color: black;
+}
+
+#sqrt {
+    background-color: white;
+    color: black;
+}
+
+#pow {
+    background-color: white;
+    color: black;
+}
+
+#divide {
+    background-color: white;
+    color: black;
+}
+
+.number {
+    background-color: gray;
+    color: white;
+}
+
+#add {
+    background-color: white;
+    color: black;
+}
+
+#subtract {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#multiply {
+    background-color: white;
+    color: black;
+    font-weight: 900;
+}
+
+#cero {
+    grid-row: 5;
+    grid-column: 1 / span 2;
+    width: 140px;
+    border-radius: 40px;
+}
+
+#equals {
+    background-color: white;
+    color: black;
+    font-weight: 900;
+}
+
+.calculator .buttons.scientifica {
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas para los botones científicos */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+.calculator .buttons.scientifica .scientific {
+    background-color: lightblue;
+    color: black;
+    width: 55px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Espacio entre los botones científicos */
+}
+
+.calculator .buttons.scientifica .scientific {
+    display: block; /* Asegura que los botones científicos se muestren en la vista científica */
+}
+
+button#sin {
+    grid-row: 1;
+    grid-column: 5;
+}
+button#cos {
+    grid-column: 6;
+    grid-row: 1;
+}
+button#tan {
+    grid-column: 7;
+    grid-row: 1;
+}
+button#log {
+    grid-column: 8;
+    grid-row: 1;
+}

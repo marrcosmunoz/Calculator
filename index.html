@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <button class="Cientifica" id="Cientifica">Cientifica</button>
+        <button id="voiceButton">Voz</button>
+        
+        <div class="display">
+            <input type="text" id="display" disabled>
+        </div>
+        <div class="buttons">
+            <button class="operator" id="clear" value="clear">C</button>
+            <button class="operator" id="sqrt" value="sqrt">√</button>
+            <button class="operator" id="pow" value="pow">x^2</button>
+            <button class="operator" id="divide" value="divide">/</button>
+            
+            <button class="number" id="1" value="1">1</button>
+            <button class="number" id="2" value="2">2</button>
+            <button class="number" id="3" value="3">3</button>
+            <button class="operator" id="add" value="add">+</button>
+            
+            <button class="number" id="cuatro" value="4">4</button>
+            <button class="number" id="cinco" value="5">5</button>
+            <button class="number" id="seis" value="6">6</button>
+            <button class="operator" id="subtract" value="subtract">-</button>
+            
+            <button class="number" id="siete" value="7">7</button>
+            <button class="number" id="ocho" value="8">8</button>
+            <button class="number" id="nueve" value="9">9</button>
+            
+            <button class="operator" id="multiply" value="multiply">X</button>
+            
+            <button class="number" id="vacio"></button>
+            <button class="button" id="cero">0</button>
+            <button class="operator" id="equals" value="equals">=</button>
+            <button class="scientific" id="sin" value="sin">sin</button>
+            <button class="scientific" id="cos" value="cos">cos</button>
+            <button class="scientific" id="tan" value="tan">tan</button>
+            <button class="scientific" id="log" value="log">log</button>
+        </div>
+    </div>
+    <script src="logica.js"></script>
+</body>
+</html>
